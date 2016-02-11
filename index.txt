@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>ProTempus Law Office Software for Attorneys</title>
+	<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+        <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+</head>
+    
+<body>
+     <banner>
+        <div id="pgTitle">
+            Law Office Automation Software</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacts.html">Free Support</a></li>
+                <li><a href="schedule.html">Free Training</a></li>
+                <li><a href="about.html">Pricing</a></li>
+                <li><a href="about.html">Getting Started</a></li>                
+          </ul>
+    </banner>
+
+        
+    <header>
+        
+         <img  id="logo" src="img/protempusLogo.png" 
+              height: 54px;
+              width: 325px;
+              alt="ProTempus Logo"  > 
+         <img  id="checkFeatures" src="img/checkFeatures.png" 
+              height: 38px;
+              width: 371px;
+              alt="ProTempus Features"  >         
+        
+        
+            
+    </header>
+    
+    <div class= "featureMenu">
+
+        <div class ="navPts"  id= "navf1">
+            <div class="smlCheck">
+            <img  src="img/check.png" 
+                 height: 38px; width: 38px; >
+            </div>
+            <div class = "nowrap-div">
+                one sdf sdf sdfs__________________</div>
+        </div> <!--End navPts -->  
+        
+
+        <div class ="navPts"  id= "navf2">
+            <div class="smlCheck">
+            <img  src="img/check.png" 
+                 height: 38px; width: 38px; >
+            </div>
+            <div class = "nowrap-div">
+                two sdf sdf sdfs_________________</div>
+        </div> <!--End navPts -->          
+       
+    </div> <!--End Features -->
+
+<div class="content"> <!--Start of content div-->
+
+<div class="features" id = f1>
+    <div class "cols" id = "f1_c1">
+        <h4>First Column</h4>
+        <p Column  content.</p>  
+        <p Column  content.</p>  
+    </div>
+   <div class "cols" id = "f1_c2">
+        <h4>Second Column</h4>
+        <p Column  content.</p>  
+        <p Column  content.</p>  
+    </div>  
+   <div class "cols" id = "f1_c3">
+        <h4>Third Column</h4>
+        <p Column  content.</p>  
+        <p Column  content.</p>  
+    </div>      
+</div>
+<div class="features" id = f2>
+    <div class "cols" id = "f2_c1">
+        <h4>First Column</h4>
+        <p Column  content.</p>  
+        <p Column  content.</p>  
+    </div>
+   <div class "cols" id = "f2_c2">
+        <h4>Second Column</h4>
+        <p Column  content.</p>  
+        <p Column  content.</p>  
+    </div>  
+   <div class "cols" id = "f2_c3">
+        <h4>Third Column</h4>
+        <p Column  content.</p>  
+        <p Column  content.</p>  
+    </div>      
+</div>    
+ 
+             
+         
+</div> <!--End of content div -->
+
+    <footer class="main-footer">
+        
+    <div class="footer-inner">		
+    <p>Simple example using flexbox with banner and footer </p>
+    </div>
+    </footer> 
+</body>
+	
+</html>

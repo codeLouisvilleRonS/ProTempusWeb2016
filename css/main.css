@@ -1,0 +1,327 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+* {	
+    margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+banner{
+    display: flex;
+    flex-direction: column;    
+    position: fixed;
+    background: #ADD8E6;
+    height: 70px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+#pgTitle{
+    align-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+banner ul{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;  /*Moves menu to right side (weird but it works?)*/
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+banner li{
+  margin-right: 10px;
+  display: inline;
+}
+
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    background: #ADD8E6;
+    height: 90px;
+    width: 100%;
+    border-bottom: solid 5px blue; 
+    
+}
+.hdFiller{
+    height:160px;
+}
+
+#logo{
+    
+    height: 70px;
+    width: 320px;
+    margin-left: 5%;
+    background-size: contain;
+
+
+
+}
+.ourFeatures{
+    display: flex;
+     margin-left: auto;
+    margin-top: 45px;
+    flex-direction: row;
+    flex-wrap: nowrap   
+     width: 310px;
+     right: 10px;
+     font-size: 1.5em;
+     font-weight: 900;
+}
+
+.ourFeatures #ourTx{ 
+    padding-top: 10px;
+    height: 40px;
+    width: 270px;
+}
+
+.medCheck img{
+    height: 40px;
+    width:  auto;
+    background-size: contain;
+    
+}
+
+
+.navPts{
+ 
+  display: flex;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1em;
+    background: lightgreen;
+    
+}
+
+
+.smlCheck img{
+    height: 28px;
+    width:  auto;
+    background-size: contain;
+    
+}
+
+
+.nowrap-div {
+    padding-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;   
+    min-width: 0;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+}
+
+
+#navf01{
+    top: 160px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf01:hover {
+   top: 160px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf02{
+    top: 190px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf02:hover {
+   top: 190px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf03{
+    top: 220px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf03:hover {
+   top: 220px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf04{
+    top: 250px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf04:hover {
+   top: 250px;
+    width:300px;
+    font-size: 1em;
+}
+#navf05{
+    top: 280px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf05:hover {
+   top: 280px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf06:hover {
+   top: 310px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf06{
+    top: 310px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+
+#navf07:hover {
+   top: 340px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf07{
+    top: 340px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf08:hover {
+   top: 370px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf08{
+    top: 370px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf09:hover {
+   top: 400px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf09{
+    top: 400px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf10:hover {
+   top: 430px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf10{
+    top: 430px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+
+
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    top: 170px;
+    background-color: lightgrey;
+}
+
+
+.features{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+   
+    
+}
+.fcols{
+     margin-bottom: 20px;
+    width: 32%;
+}
+
+
+.main-footer {
+    border-top: 3px solid blue;
+	text-align: center;
+	background: #d9e4ea;
+    height: 40px; 
+}
+
+@media screen and (max-width: 800px) {
+    
+.content{
+
+        background:red;
+
+
+    }
+    
+  .features{
+    
+    flex-direction: column;
+}
+
