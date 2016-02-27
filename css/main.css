@@ -7,35 +7,37 @@
 * {	
     margin: 0;
 }
-
-body {
-	display: flex;
+header{
+    display: flex;
+    position: fixed;
 	flex-direction: column;
-	min-height: 100vh;
+    background: #ADD8E6;
+    height: 200px;
+    width: 100%;
 }
+
 
 banner{
     display: flex;
     flex-direction: column;    
-    position: fixed;
     background: #ADD8E6;
     height: 70px;
     width: 100%;
     flex-wrap: wrap;
-    align-items: center; 
 }
 
 #pgTitle{
-    align-content: center;
+    text-align: center;
     font-size: 1.5em;
     font-weight: bold;
+    width: 100%;
 
 }
 
 banner ul{
   display: flex;
   flex-direction: row;
-  margin-left: auto;  /*Moves menu to right side (weird but it works?)*/
+  margin-left: auto; 
   list-style-type: none;
   flex-wrap: wrap;
 }
@@ -45,49 +47,45 @@ banner li{
   display: inline;
 }
 
-
-header{
-    position: fixed;
+.logoDiv{
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
     background: #ADD8E6;
-    height: 90px;
+    height: 80px;
     width: 100%;
-    border-bottom: solid 5px blue; 
-    
-}
-.hdFiller{
-    height:160px;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo{
-    
+   
     height: 70px;
     width: 320px;
-    margin-left: 5%;
     background-size: contain;
-
-
-
 }
-.ourFeatures{
-    display: flex;
-     margin-left: auto;
-    margin-top: 45px;
+
+#free30 {
+	
+    margin-left: 100%; 
+    height: 50px;
+    width: 100px;
+	justify-content: flex-end;
+    background-size: contain;	
+	
+}
+
+.ourFeatures {
+   display: flex;
     flex-direction: row;
-    flex-wrap: nowrap   
-     width: 310px;
-     right: 10px;
-     font-size: 1.5em;
-     font-weight: 900;
+    background: #ADD8E6;
+    height: 50px;
+    width: 100%;
+    justify-content: flex-end;
+    
 }
 
-.ourFeatures #ourTx{ 
-    padding-top: 10px;
-    height: 40px;
-    width: 270px;
-}
+
+
 
 .medCheck img{
     height: 40px;
@@ -95,7 +93,59 @@ header{
     background-size: contain;
     
 }
+#ourTx{
+    margin-top: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
+.content {
+
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    background-color: lightgrey;
+}
+
+
+
+.features{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+	margin-top: 60px;
+   
+    
+}
+.secHdr{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 800;
+	padding: 15px;
+	
+}
+.featuresCols{
+	display: flex;
+    flex-direction: row;
+	
+}
+.fcols{
+     margin-bottom: 20px;
+    width: 32%;
+	margin-right: 30px;
+	font-size: 1.2em;
+}
+
+
+.main-footer {
+    border-top: 3px solid blue;
+	text-align: center;
+	background: #d9e4ea;
+    height: 40px; 
+}
 
 .navPts{
  
@@ -127,7 +177,7 @@ header{
 
 
 #navf01{
-    top: 160px;    
+    top: 200px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -136,13 +186,12 @@ header{
 }
 
 #navf01:hover {
-   top: 160px;
     width:300px;
     font-size: 1em;
 }
 
 #navf02{
-    top: 190px;    
+    top: 230px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -151,13 +200,12 @@ header{
 }
 
 #navf02:hover {
-   top: 190px;
     width:300px;
     font-size: 1em;
 }
 
 #navf03{
-    top: 220px;    
+    top: 260px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -166,13 +214,13 @@ header{
 }
 
 #navf03:hover {
-   top: 220px;
+
     width:300px;
     font-size: 1em;
 }
 
 #navf04{
-    top: 250px;    
+    top: 290px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -181,12 +229,11 @@ header{
 }
 
 #navf04:hover {
-   top: 250px;
     width:300px;
     font-size: 1em;
 }
 #navf05{
-    top: 280px;    
+    top: 320px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -195,19 +242,14 @@ header{
 }
 
 #navf05:hover {
-   top: 280px;
     width:300px;
     font-size: 1em;
 }
 
-#navf06:hover {
-   top: 310px;
-    width:300px;
-    font-size: 1em;
-}
+
 
 #navf06{
-    top: 310px;    
+    top: 350px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -215,15 +257,30 @@ header{
      
 }
 
-
-#navf07:hover {
-   top: 340px;
+#navf06:hover {
     width:300px;
     font-size: 1em;
 }
 
+
+
 #navf07{
-    top: 340px;    
+    top: 380px;   
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf07:hover {
+   top: 380px;
+    width:300px;
+    font-size: 1em;
+}
+
+#navf08{
+    top: 410px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -232,28 +289,27 @@ header{
 }
 
 #navf08:hover {
-   top: 370px;
     width:300px;
     font-size: 1em;
 }
 
-#navf08{
-    top: 370px;    
+
+#navf09{
+    top: 440px;    
      position: fixed;
      width: 70px;
      right: 0px;
      font-size: 1.1em;
      
 }
-
 #navf09:hover {
-   top: 400px;
     width:300px;
     font-size: 1em;
 }
 
-#navf09{
-    top: 400px;    
+
+#navf10{
+    top: 470px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -262,13 +318,13 @@ header{
 }
 
 #navf10:hover {
-   top: 430px;
     width:300px;
     font-size: 1em;
 }
 
-#navf10{
-    top: 430px;    
+
+#navf11{
+    top: 500px;    
      position: fixed;
      width: 70px;
      right: 0px;
@@ -276,44 +332,120 @@ header{
      
 }
 
+#navf11:hover {
+    width:300px;
+    font-size: 1em;
+}
 
+#navf12{
+    top: 530px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
 
+#navf12:hover {
+    width:300px;
+    font-size: 1em;
+}
 
-.content {
+#navf13{
+    top: 560px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
 
-    display: flex;
-    flex-direction: column;
-    top: 170px;
-    background-color: lightgrey;
+#navf13:hover {
+    width:300px;
+    font-size: 1em;
+}
+
+#navf14{
+    top: 590px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
+}
+
+#navf14:hover {
+    width:300px;
+    font-size: 1em;
 }
 
 
-.features{
-    display: flex;
-    margin-left: 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-   
-    
+#navf15{
+    top: 620px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
 }
-.fcols{
-     margin-bottom: 20px;
-    width: 32%;
+
+#navf15:hover {
+    width:300px;
+    font-size: 1em;
 }
 
 
-.main-footer {
-    border-top: 3px solid blue;
-	text-align: center;
-	background: #d9e4ea;
-    height: 40px; 
+#navf16{
+    top: 650px;    
+     position: fixed;
+     width: 70px;
+     right: 0px;
+     font-size: 1.1em;
+     
 }
+
+#navf16:hover {
+    width:300px;
+    font-size: 1em;
+}
+
+#f1_c3 img{
+	height: auto;
+	width: 50%;
+	margin-left: 40px;
+	
+}
+
+
+
 
 @media screen and (max-width: 800px) {
     
-.content{
+    #logo{
+    
+    height: 35px;
+    width: 250px;
+    margin-left: 20%;
+    background-size: contain;
+    }
+	
+.secHdr{
+	text-align: center;
+	font-size: 1.0em;
+	font-weight: 900;
+	padding: 8px;
+	
+}
+    
+    #pgTitle{
+    align-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+    
+    .content{
 
         background:red;
 
@@ -322,6 +454,8 @@ header{
     
   .features{
     
-    flex-direction: column;
+      flex-direction: column;
+    }
+    
 }
 

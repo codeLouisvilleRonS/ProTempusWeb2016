@@ -1,3 +1,13 @@
 http://www.colorpicker.com/
 
 Clock Green 0E8017
+14, 128, 23
+
+Text color
+b3eab5 -> ligth gray
+
+background color
+f7f7f7 - light grey
+
+purple
+a085c6
