@@ -7,6 +7,15 @@
 * {	
     margin: 0;
 }
+
+#featureList{
+	top: 300px;
+	right: 300px;
+	position: fixed;
+	min-height: 80vh;
+	border: 2px solid red;
+}
+
 header{
     display: flex;
     position: fixed;
@@ -99,6 +108,8 @@ banner li{
     font-weight: bold;
 }
 
+
+
 .content {
 
     display: flex;
@@ -106,6 +117,62 @@ banner li{
     top: 0px;
     background-color: lightgrey;
 }
+
+.featureList{
+	display: flex;
+	flex-direction: column;
+	position:fixed;
+	top: 200px;
+	z-index; -1;
+	cursor:pointer;
+	font-size: 1.3em;
+	text-decoration: none;
+	right:0;
+	width: 350px;
+	
+}
+.notHovering {
+ 	display: flex;
+	flex-direction: row;
+ 	white-space: nowrap;
+    overflow: hidden;   
+    min-width: 0;
+    margin-left: 270px;
+    text-overflow: ellipsis;
+	width: 100px;
+	background: lightgreen;
+	
+    
+}
+
+.hovering {
+	display: flex;
+	flex-direction: row;
+    white-space: nowrap;
+    text-overflow: ellipsis;  
+    min-width: 0;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+	right: 0px;	
+	color: white;
+	margin-left: 300;
+	background: green;
+	
+    
+}
+
+.featureList ul{
+	list-style-type: none;
+}
+.featureList ul li{
+	display: flex;
+	flex-direction: row;
+	min-width: 0;
+    margin-left: 5px;
+     overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 
 
@@ -156,7 +223,10 @@ banner li{
     background: lightgreen;
     
 }
-
+.smlCheck {
+	display: flex;
+	flex-direction: row; 
+}
 
 .smlCheck img{
     height: 28px;
@@ -176,238 +246,7 @@ banner li{
 }
 
 
-#navf01{
-    top: 200px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
 
-#navf01:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-#navf02{
-    top: 230px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf02:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-#navf03{
-    top: 260px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf03:hover {
-
-    width:300px;
-    font-size: 1em;
-}
-
-#navf04{
-    top: 290px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf04:hover {
-    width:300px;
-    font-size: 1em;
-}
-#navf05{
-    top: 320px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf05:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-
-#navf06{
-    top: 350px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf06:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-
-#navf07{
-    top: 380px;   
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf07:hover {
-   top: 380px;
-    width:300px;
-    font-size: 1em;
-}
-
-#navf08{
-    top: 410px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf08:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-#navf09{
-    top: 440px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-#navf09:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-#navf10{
-    top: 470px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf10:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-#navf11{
-    top: 500px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf11:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-#navf12{
-    top: 530px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf12:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-#navf13{
-    top: 560px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf13:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-#navf14{
-    top: 590px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf14:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-#navf15{
-    top: 620px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf15:hover {
-    width:300px;
-    font-size: 1em;
-}
-
-
-#navf16{
-    top: 650px;    
-     position: fixed;
-     width: 70px;
-     right: 0px;
-     font-size: 1.1em;
-     
-}
-
-#navf16:hover {
-    width:300px;
-    font-size: 1em;
-}
 
 #f1_c3 img{
 	height: auto;
