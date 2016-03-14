@@ -21,9 +21,8 @@
      $scope.scrollTo = function(featureLoc) {
 		
 		  $location.hash( this.feature.nav);
-		  $anchorScroll.yOffset = 180; // add offset for header
-		  $anchorScroll();
-           
+		  $anchorScroll.yOffset = 210; // add offset for header
+		  $anchorScroll();   
       };		
 		
 });		
@@ -85,11 +84,11 @@ var featureList = [{
 	"nav":"f13"
 },
 {
-    "item": "Free Support____________________________",
+    "item": "Free Support - NO long term contract____",
 	"nav":"f14"
 },	
 {
-    "item": "Free Training___________________________",
+    "item": "Free Training __________________________",
 	"nav":"f15"
 },
 		   

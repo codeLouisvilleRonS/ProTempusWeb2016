@@ -21,48 +21,57 @@
 	
 
 	
-     <header>
+     <div class = "headerSec">
          
-     <banner>
-        <div id="pgTitle">
-            Law Office Automation Software</div>
-            <ul>
-                <li><a href="#f5">Home</a></li>
-                <li><a href="contacts.html">Free Support</a></li>
-                <li><a href="schedule.html">Free Training</a></li>
-                <li><a href="about.html">Pricing</a></li>
-                <li><a href="about.html">Getting Started</a></li>                
-          </ul>
-    </banner>
-         
-       
+		 <div class = "banner">
+			<div id="pgTitle">
+				Law Office Automation Software
+			
+			
+			 </div>
+			 <div class ="banLinks">
+				<ul>
+					<li><a href="contacts.html">Contact us</a></li>
+					<li><a href="contacts.html">Testimonials</a></li>
+					<li><a href="about.html">Pricing</a></li>
+					<li><a href="about.html">Getting Started</a></li>                
+			  </ul>
+			 </div>
+		</div> <!--  end baner div -->
 
-    <div class="logoDiv">
+		 <div class="logoDiv">
+		 
+		 <div class="quoteOfDay">
+			Quote of the Day
+		   <pre id="response"></pre>
+			 <div><hr></div>
+	
+		 </div>
+		<div>
          <img  id="logo" src="img/protempusLogo.png" 
               alt="ProTempus Logo"  > 
+		</div>
+		<div class="logoRight">
 		
-		 <a  href="free30daytrial.html" link
+		 	<a  href="free30daytrial.html" link
 				  {text-decoration: none;}><img id = "free30" src="img/free_trial_button.jpg" alt="free 30-day trial"  /></a>
-    </div>
-        
-   
-    <div class="ourFeatures" >
-         <div class="medCheck">
-            <img  src="img/check.png" >
-        </div>         
-        <div id="ourTx">
-            <span>Checkout our Features!</span></div>        
-    </div>    
             
-  </header>  
-
+			 </div>
+		 </div> <!--  end logo div -->
+		 
+		 <div class="ourFeatures" >
+					<img  src="img/check.png" >
+            		<span>Checkout our Features!</span>
+		</div>
+		 
+	</div> <!--  end header sec -->
 	
 <div class="featureList" ng-app="myApp">
     <div ng-controller="featureController">
         
     	<span ng-repeat="feature in features " 
 			ng-class="over ? 'hovering' : 'notHovering'"
-			ng-style="{left-margin: {{cols}} + 'px'}"
+
 			ng-mouseenter="mouseEvent (feature,true)" 
 			ng-mouseleave="mouseEvent (feature,false)"
 
@@ -77,8 +86,10 @@
  		</div>					
     </span>			
         
-    </div>
-</div>
+        
+    </div> <!--End Features -->
+     
+ </div> <!--End controler-->
      	
 
 <div class="content"> <!--Start of content div-->
@@ -91,31 +102,16 @@
 	
 	    <div class="fcols" id = "f0_c1">
         <h4>f1 First Column</h4>
-        <p> 	
-</p>
+        <p>Filler to shift content below header.
+			</p>
 		
 	</div>
-			
- <div class="fcols" id = "f0_c2">
-        <h4>f1 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-       
-			
-	 </div>
-	 
-	  <div class="fcols" id = "f0_c3">
-        <h4>f1 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-       
-			</div>
   </div>
+</div>
 	
 	
 
-     
-    </div> <!--End Features -->
-     
-    </div> <!--End controler-->
+
 		
 	
   <div class="features" id = "f1">
@@ -135,7 +131,7 @@
     </div>  
 		  
    <div class="fcols" id = "f1_c3">
-         <img  id="logo" src="img/noCloud.png" 
+         <img   src="img/noCloud.png" 
               alt="No Cloud Pic"  > 
           
     </div> 
@@ -148,170 +144,147 @@
       <div class="featuresCols">
     <div class="fcols" id = "f2_c1">
         
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+		<h4> NO MORE PROBONO OVER THE PHONE!</h4>
+		<p>Our unique integration of billing and your daily calendar, make it supper easy to document your cases, schedule your time and bill all from the same window.  Once you complete a meeting, click on the event on your calendar, click billable and that time will be included on the client’s next invoice.  When a client calls or you call a client, log that phone call on your ProTempus calendar once the call is completed, click billable and your done documenting the phone and billing the client with one step.  The ProTempus stop watch will even track the time you are one the phone calls.</p><P>  NO MORE PROBONO OVER THE PHONE.</p>  
     </div>
    <div class="fcols" id = "f2_c2">
-        <h4>f2 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Increase your Billable time by 25%.</h4>
+        <p>ProTempus is the only law office software that give you an instant snapshoot of your time as you bill it. When you check billable on a phone call, a meeting or time you spend drafting a document or and email, ProTempus will display that event on your daily calendar in GREEN. At the end of the day you can easily view your billable time for the day. This makes it very easy to spot any omissions that frequently steel money from your pocket. Capturing every ten minute phone call can easily increase your billable time by 25% </p>  
     </div>  
    <div class="fcols" id = "f2_c3">
-        <h4>f2 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+         <img   src="img/billable.png" 
+              alt="billable check box"  >  
     </div>      
 </div>
 </div>
   
    
  <div class="features" id = "f3">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >Invoicing done the right way, YOUR WAY!</div>
       <div class="featuresCols">
     <div class="fcols" id = "f3_c1">
-        <h4>f3 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>ProTempus has you covered.</h4>
+        <p>Whether you bill monthly, quarterly, once a case is completed, upfront or ad-hoc, ProTempus makes it quick and easy.  It only takes a few mouse clicks to generate invoices regardless of your billing cycle.  We import your office letter head to create a completely custom and professional looking invoice.  You can create virtually unlimited detail on each line item describing exactly what was done on the case.  ProTempus attorneys have found that the increased detail  improves pay up rates and reducing your Accounts Receivable. When the client sees details about a ten minute phone call, versus $100 for a “phone call”, they are more comfortable that you have earned their fee..</p>  
     </div>
    <div class="fcols" id = "f3_c2">
-        <h4>f3 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Your client’s choice.</h4>
+        <p>Invoices can be sent via traditional mail or via email. This either option can be selected for each client allowing you to easily handle their preference. Once you generate invoices to be mailed will be printed on your local printer. These invoices will have a folding line printed on the invoice to make it easy to fold and stuff invoices into window envelopes. A follow up step, allows you to step through the invoices that need to be emailed, allowing you to customize the email message for individual clients.</p>  
     </div>  
    <div class="fcols" id = "f3_c3">
-        <h4>f3 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+         <img   src="img/CreateInvoices.png" 
+              alt="billable check box"  > 
     </div>      
 </div>
 </div>
   
     
  <div class="features" id = "f4">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >Fully Integrated Accounts Receivables</div>
       <div class="featuresCols">
     <div class="fcols" id = "f4_c1">
-        <h4>f4 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Post payments quickly</h4>
+        <p>Our software allows you to post payments and deposits quickly.  Attorneys love the fact that ProTempus makes it easy to spot good clients and clients that are slow to pay.  If you know a client is behind on their payments, your next meeting or phone call allows you to mention that they need to send a check to move the case forward. Our aging reports and integrated invoice / statements keep you and your clients informed as to their current account balance.  Communications is often the secret to encouraging clients to keeping their account current and improving the cash flow of your law office.</p>  
     </div>
    <div class="fcols" id = "f4_c2">
-        <h4>f4 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <img   src="img/AR_col2.png" 
+              alt="billable check box"  >
     </div>  
    <div class="fcols" id = "f4_c3">
-        <h4>f4 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+       <img   src="img/AR_col3.png" 
+              alt="billable check box"  >
     </div>      
 </div>
 </div>  
     
  <div class="features" id = "f5">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >Fully integrated Trust Accounting</div>
       <div class="featuresCols">
     <div class="fcols" id = "f5_c1">
-        <h4>f5 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+		<h4>ProTempus has a fully integrated Trust Accounting sub system.</h4>
+			<p>When a client gives you a deposit for work to be completed, you can easily deposit that amount into the client’s Trust Account.  When you create invoices for your clients you can either automatically apply money from the their trust account against the new invoice or selectively apply the trust money as the case is completed.  Two clicks will display the clients current trust account balance.  Our billing detail report, account summary on the client’s invoice and numerous audit reports keep you and your clients on top of your trust accounts.</p>  
     </div>
    <div class="fcols" id = "f5_c2">
-        <h4>f5 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Make audits easy.</h4>
+        <p> If you are using the Quick Books interface, ProTempus will automatically create a sub account in the Quick Books Trust registry for each client. It becomes very easy to determine the balance of each client’s trust account.  ProTempus will display the balance within ProTempus and Quick Books will also display their balance in their individual sub account within your trust bank account.  You have the option of maintaining your trust bank as a separate Quick Book’s company file.  Allowing you to optionally give the Bar Association Auditor the Quick Books trust account without sharing your complete financial data.</p>  
     </div>  
    <div class="fcols" id = "f5_c3">
-        <h4>f5 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+         <img   src="img/trust.png" 
+              alt="depoist into trust account button"  >
     </div>      
 </div>
 </div>
   
     
  <div class="features" id = "f6">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >Complete contact management system.</div>
       <div class="featuresCols">
     <div class="fcols" id = "f6_c1">
-        <h4>f6 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Keep track of all contacts, not just clients.</h4>
+        <p>We recommend entering all contacts that interact with your office.  This allows ProTempus to provide instant conflict checking.  You can enter multiple addresses, multiple phone numbers and unlimited notes for each contact.  Linking contacts to a given case gives you instant access to all parties in a case, including the judges, opposing attorneys, witnesses, adjusters, etc., with one click.  Contact management is the central point of ProTempus.  With three keystrokes you can locate any contact, at that point you are one mouse click away from any detail about that contact.  Any lawyer or authorized staff in your office can view any case that includes the contact or any history with the office.</p>  
     </div>
    <div class="fcols" id = "f6_c2">
-        <h4>f6 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Instant conflict checking</h4>
+        <p>When adding a new client into ProTempus, it will display all contacts with that same name.  This features prevents the create of duplicate contacts that occur in many CMR systems.  In addition it provides you with the history of that contact prevent possible conflicts of interest entanglements.  This is especially true in offices with more than one lawyer.  ProTempus is the common knowledge base for you entire office.  With ProTempus the right hand knows what the left hand is doing.  Allowing you to provide the best possible customer service to your clients, while solving their legal issues.  ProTempus software takes the pain out of running a law office.</p>  
     </div>  
    <div class="fcols" id = "f6_c3">
-        <h4>f6 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <img   src="img/contact.png" 
+              alt="Contact management conflict checking"  >
     </div>      
 </div>
 </div>
   
     
  <div class="features" id = "f7">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >Case management made easy.</div>
       <div class="featuresCols">
     <div class="fcols" id = "f7_c1">
-        <h4>f7 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Case management made easy</h4>
+        <p>Documents, trial dates, deadlines, emails sent and received, phone calls,  correspondence from opposing attorney, time billed, time to be invoiced, payments received, Trust account balance, keeping track of parties in the case, are just some of the many things ProTempus will track about each case.  Each of these is just one mouse click away, once you select the client in ProTempus.  ProTempus will save you and your staff hours each week from the details of managing each case.</p>  
     </div>
    <div class="fcols" id = "f7_c2">
-        <h4>f7 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Track all the parties in a case.</h4>
+        <p> Managing and communicating with all of the parties in a case can be a major headache.  ProTempus can link any contact in your database to any case, defining their role in a specific case. There is no limit to the number of parties in a case.  You may find you are facing an opposing counsel in more than one case, ProTempus can handle that along with the any details that are specific to that case.</p>  
     </div>  
    <div class="fcols" id = "f7_c3">
-        <h4>f7 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <img   src="img/parties.png" 
+              alt="party management"  >
     </div>      
 </div>
 </div>
   
     
  <div class="features" id = "f8">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >Accessing any document for a given client is one click away.</div>
       <div class="featuresCols">
     <div class="fcols" id = "f8_c1">
-        <h4>f8 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>No more navigating the windows directory structure</h4>
+        <p>Once you select your client, just click on the documents button on the client’s windows.  A list of all of their documents will be displayed.  Attorneys can group the documents is subfolders by matter code, document type or the most recent at the top.  When creating new documents, you can select a boiler plate first, name your document and ProTempus will automatically place the document in the client’s document folder.  No more misplaced documents. Pointing ProTempus to your shared drive means all your staff and attorneys can access any document from any computer.</p>  
     </div>
    <div class="fcols" id = "f8_c2">
-        <h4>f8 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>Document assembly made simple.</h4>
+        <p>ProTempus has a built in document assemble software.  You can create a intake from for each type of case.  The intake form will help you or your staff collected the pertinent information need for the case.  Once collected you will be able to generate any number of documents merging the intake data with your boiler plate documents.  Document creation can be as simple as three mouse clicks.</p>  
     </div>  
    <div class="fcols" id = "f8_c3">
-        <h4>f8 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+         <img   src="img/documents.png" 
+              alt="document management"  >
     </div>      
 </div>
  </div> 
     
  <div class="features" id = "f9">
-	<div class="secHdr" >Secure non cloud based software</div>
+	<div class="secHdr" >ProTempus keeps your To Do list manageable.</div>
       <div class="featuresCols">
     <div class="fcols" id = "f9_c1">
-        <h4>f9 First Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>ProTempus helps attorneys stay on task</h4>
+        <p>By assigning trigger dates to each task item, you can tell ProTempus when you want it to notify you of an up-coming deadline.  Lawyers will not have any last minute surprises with ProTempus.  Many systems overwhelm their users by displaying all of your tasks on your current To Do list.  By default ProTempus will only display tasks that have a trigger date on or prior to the current date.  When you come to the office each morning, ProTempus focuses you on the tasks that need to be completed today.  You have the option to look ahead to view tasks that will be due next week or next month. </p>  
     </div>
    <div class="fcols" id = "f9_c2">
-        <h4>f9 Second Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+        <h4>ProTempus can track the time you spend on a task</h4>
+        <p>Our To Do list also integrates with our billing system. When a task is completed, one click can add it to the client’s next invoice. You can accumulate the time you worked on a task over a period of time whether it takes a week or a day. Starting the stop watch each time you work on a task will accumulate the total time you have spent. Once completed, just click billable and you have added the accumulated time worked to the client’s invoice and added money into your practice.</p>  
     </div>  
    <div class="fcols" id = "f9_c3">
-        <h4>f9 Third Column</h4>
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
-        <p> Column  content.</p><p> Column  content.</p><p> Column  content.</p>  
+         <img   src="img/taskDate.png" 
+              alt="Task Date"  >
     </div>      
 </div>
 </div>

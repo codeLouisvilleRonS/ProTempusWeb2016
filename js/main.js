@@ -1,19 +1,21 @@
 $(document).ready(function() {
      
-    
-	
-    // the AJAX part
-    var quoteAPI = "http://quotesondesign.com/api/3.0/api-3.0.json";
-    
-    function displayPhotos(data) {
-      var photoHTML = '<ul>';
-      $.each(data.items,function(i,photo) {
-        photoHTML += '<li class="grid-25 tablet-grid-50">';
-        photoHTML += '<a href="' + photo.link + '" class="image">';
-        photoHTML += '<img src="' + photo.media.m + '"></a></li>';
-      }); // end each
-      photoHTML += '</ul>';
-      $('#photos').html(photoHTML);
-    }
-    $.getJSON(flickerAPI, flickrOptions, getQuote);	
-});   
+    $.ajax({type: "POST",
+            crossDomain : true,
+            url: "http://api.forismatic.com/api/1.0/",
+            data: {method: "getQuote",format: "jsonp",lang: "en"},
+            dataType: "jsonp",
+            jsonp: "jsonp",
+            jsonpCallback: "myJsonMethod"
+    });
+});
+
+
+function myJsonMethod(response){	
+ 	//alert(JSON.stringify(response));	
+
+  $('#log').prepend('<pre>' + $('#response').html() + '</pre>');
+  $('#response').html(response.quoteText + " - " + response.quoteAuthor);
+}
+
+  
